@@ -20,9 +20,9 @@ call plug#begin('~/.vim/plugged')
       exe "set rtp+=" . s:after
     endif
 
-    let s:package = l . '/package.vim'
-    if filereadable(s:package)
-      exe "source" s:package
+    let s:packages = l . '/packages.vim'
+    if filereadable(s:packages)
+      exe "source" s:packages
     endif
   endfor
 call plug#end()

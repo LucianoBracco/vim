@@ -1,0 +1,1 @@
+/home/luciano/Projects/Vim/vimrc

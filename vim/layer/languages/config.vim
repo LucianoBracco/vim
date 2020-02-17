@@ -1,12 +1,16 @@
 " Coc config
 let g:coc_global_extensions = [
-  \ 'coc_snippets',
-  \ 'coc-pair',
+  \ 'coc-marketplace',
+  \ 'coc-pairs',
+  \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-eslint',
   \ 'coc-prettier',
-  \ 'coc-json'
+  \ 'coc-json',
+  \ 'coc-html'
   \ ]
+
+let g:coc_node_path =$HOME . "/.nvm/versions/node/v12.16.0/bin/node"
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 "run prettier on save
